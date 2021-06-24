@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane layoutX="10.0" layoutY="30.0" prefHeight="404.0" prefWidth="1295.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyContact">
+   <Label layoutX="236.0" layoutY="-29.0" prefHeight="32.0" prefWidth="270.0" text="Liste Des Contacts" textFill="#ffe259" underline="true">
+      <font>
+         <Font name="Segoe UI Bold" size="25.0" />
+      </font>
+   </Label>
+   <TableView fx:id="TableView" layoutX="14.0" layoutY="16.0" prefHeight="323.0" prefWidth="673.0" style=": #ffffff;">
+      <columns>
+         <TableColumn fx:id="numberCol" prefWidth="100.0" text="Identifiant">
+            <cellValueFactory>
+               <PropertyValueFactory property="lastNameCol1Number" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn fx:id="telCol" prefWidth="125.0" text="Téléphone">
+            <cellValueFactory>
+               <PropertyValueFactory property="tel" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn fx:id="nameFisrtNamecol" prefWidth="135.0" text="Nom/Prénoms">
+            <cellValueFactory>
+               <PropertyValueFactory property="nameFirstName" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn fx:id="emailCol" prefWidth="125.0" text="E-maïl">
+            <cellValueFactory>
+               <PropertyValueFactory property="email" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn fx:id="sexeCol" prefWidth="161.0" text="Sexe">
+            <cellValueFactory>
+               <PropertyValueFactory property="sexeUsers" />
+            </cellValueFactory>
+         </TableColumn>
+      </columns>
+   </TableView>
+   <Button fx:id="modify" layoutX="269.0" layoutY="354.0" mnemonicParsing="false" onAction="#modifyContact" prefHeight="42.0" prefWidth="133.0" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-background-color: #FFE259;" text="Modifier" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Bold" size="16.0" />
+      </font></Button>
+   <Label layoutX="710.0" layoutY="118.0" text="Téléphone :" textFill="#ffe259">
+      <font>
+         <Font name="Segoe UI Bold" size="16.0" />
+      </font>
+   </Label>
+   <TextField fx:id="telContactUser" alignment="CENTER" layoutX="815.0" layoutY="101.0" prefHeight="53.0" prefWidth="201.0" promptText="Téléphone" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-border-color: #FFE259;">
+      <font>
+         <Font name="Segoe UI Bold" size="14.0" />
+      </font></TextField>
+   <TextField fx:id="nameFirstNameContactUser" alignment="CENTER" layoutX="1082.0" layoutY="101.0" prefHeight="53.0" prefWidth="201.0" promptText="Nom" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-border-color: #FFE259;">
+      <font>
+         <Font name="Segoe UI Bold" size="14.0" />
+      </font></TextField>
+   <TextField fx:id="emailContactUser" alignment="CENTER" layoutX="815.0" layoutY="234.0" prefHeight="53.0" prefWidth="201.0" promptText="E-maïl" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-border-color: #FFE259;">
+      <font>
+         <Font name="Segoe UI Bold" size="14.0" />
+      </font></TextField>
+   <TextField fx:id="sexeContactUser" alignment="CENTER" layoutX="1082.0" layoutY="234.0" prefHeight="53.0" prefWidth="201.0" promptText="Sexe" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-border-color: #FFE259;">
+      <font>
+         <Font name="Segoe UI Bold" size="14.0" />
+      </font></TextField>
+   <Label layoutX="710.0" layoutY="251.0" prefHeight="19.0" prefWidth="60.0" text="E-maïl :" textFill="#ffe259">
+      <font>
+         <Font name="Segoe UI Bold" size="16.0" />
+      </font>
+   </Label>
+   <Label layoutX="1028.0" layoutY="118.0" prefHeight="19.0" prefWidth="50.0" text="Nom :" textFill="#ffe259">
+      <font>
+         <Font name="Segoe UI Bold" size="16.0" />
+      </font>
+   </Label>
+   <Label layoutX="1028.0" layoutY="250.0" prefHeight="19.0" prefWidth="60.0" text="Sexe :" textFill="#ffe259">
+      <font>
+         <Font name="Segoe UI Bold" size="16.0" />
+      </font>
+   </Label>
+   <Label layoutX="859.0" layoutY="-29.0" prefHeight="32.0" prefWidth="338.0" text="Modification D'un Contact" textFill="#ffe259" underline="true">
+      <font>
+         <Font name="Segoe UI Bold" size="25.0" />
+      </font>
+   </Label>
+   <Button fx:id="saveModify" layoutX="987.0" layoutY="354.0" mnemonicParsing="false" onAction="#saveModifyContact" prefHeight="42.0" prefWidth="133.0" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-background-color: #FFE259;" text="Appliquer" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Bold" size="16.0" />
+      </font>
+   </Button>
+   <Button fx:id="previousButtonWindowModifyContact" layoutX="-6.0" layoutY="-29.0" mnemonicParsing="false" onAction="#previousWindowModifyContact" prefHeight="22.0" prefWidth="41.0" style="-fx-background-color: #ffffff;">
+      <graphic>
+         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@img/left-arrow.png" />
+         </ImageView>
+      </graphic>
+   </Button>
+</AnchorPane>

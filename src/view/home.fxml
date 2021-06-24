@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Home">
+    <ImageView fitHeight="300.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@img/a.png" />
+    </ImageView>
+    <Label layoutX="95.0" layoutY="14.0" lineSpacing="10.0" prefHeight="158.0" prefWidth="458.0" text="WELCOME &#10;TO THE PHONE BOOK&#10;MANAGELMENT SOFTWARE " textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Segoe UI Bold" size="30.0" />
+        </font>
+    </Label>
+    <Button fx:id="startWindowLogin" layoutX="221.0" layoutY="242.0" mnemonicParsing="false" onAction="#showWindowLogin" prefHeight="44.0" prefWidth="159.0" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-background-color: #FFE259;" text="To start" textFill="WHITE">
+        <font>
+            <Font name="Segoe UI Bold" size="17.0" />
+        </font>
+    </Button>
+    <Button fx:id="closeWindowHomeButton" layoutX="562.0" layoutY="6.0" mnemonicParsing="false" onAction="#closeWindowHome" prefHeight="13.0" prefWidth="16.0" style="-fx-background-color: #ffffff;">
+        <graphic>
+            <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@img/close.png" />
+            </ImageView>
+        </graphic>
+    </Button>
+</AnchorPane>

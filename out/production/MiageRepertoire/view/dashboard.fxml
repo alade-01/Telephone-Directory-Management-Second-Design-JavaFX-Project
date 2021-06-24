@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFE259;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Dashboard">
+   <Label layoutX="220.0" layoutY="-2.0" prefHeight="32.0" prefWidth="163.0" text="DASHBOARD" textFill="WHITE" underline="true">
+      <font>
+         <Font name="Segoe UI Bold" size="25.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="103.0" fitWidth="103.0" layoutX="89.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@img/addContact.png" />
+   </ImageView>
+   <ImageView fitHeight="103.0" fitWidth="103.0" layoutX="402.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@img/images.png" />
+   </ImageView>
+   <ImageView fitHeight="103.0" fitWidth="103.0" layoutX="83.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@img/icon-delete-16.png" />
+   </ImageView>
+   <ImageView fitHeight="103.0" fitWidth="103.0" layoutX="402.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@img/l.png" />
+   </ImageView>
+   <Separator layoutX="1.0" layoutY="225.0" prefHeight="3.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" />
+   <Separator layoutX="259.0" layoutY="31.0" orientation="VERTICAL" prefHeight="374.0" prefWidth="83.0" />
+   <Button fx:id="addContact" layoutX="54.0" layoutY="166.0" mnemonicParsing="false" onAction="#addContact" prefHeight="46.0" prefWidth="163.0" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-background-color: #ffffff;" text="MODIFY CONTACT" textFill="#ffe259">
+      <font>
+         <Font name="Segoe UI Bold" size="14.0" />
+      </font>
+   </Button>
+   <Button fx:id="modifyContact" layoutX="373.0" layoutY="172.0" mnemonicParsing="false" onAction="#modifyContact" prefHeight="46.0" prefWidth="163.0" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-background-color: #ffffff;" text="MODIFIER CONTACT" textFill="#ffe259">
+      <font>
+         <Font name="Segoe UI Bold" size="14.0" />
+      </font>
+   </Button>
+   <Button fx:id="deleteContact" layoutX="54.0" layoutY="350.0" mnemonicParsing="false" onAction="#deleteContact" prefHeight="46.0" prefWidth="163.0" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-background-color: #ffffff;" text="DELETE CONTACT" textFill="#ffe259">
+      <font>
+         <Font name="Segoe UI Bold" size="13.0" />
+      </font>
+   </Button>
+   <Button fx:id="listContact" layoutX="373.0" layoutY="350.0" mnemonicParsing="false" onAction="#listContact" prefHeight="46.0" prefWidth="152.0" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-background-color: #ffffff;" text="CONTACT LIST " textFill="#ffe259">
+      <font>
+         <Font name="Segoe UI Bold" size="14.0" />
+      </font>
+   </Button>
+   <Button fx:id="logoutSofwareButton" layoutX="545.0" mnemonicParsing="false" onAction="#logoutSofware" prefHeight="48.0" prefWidth="46.0" style="-fx-background-color: #FFE259;">
+      <graphic>
+         <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@img/sorti.png" />
+         </ImageView>
+      </graphic></Button>
+</AnchorPane>

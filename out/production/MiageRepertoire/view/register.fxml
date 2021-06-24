@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Register">
+   <AnchorPane prefHeight="408.0" prefWidth="291.0" style="-fx-background-color: #FFE259;">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="71.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@img/registration-icon-53.png" />
+      </ImageView>
+      <Label layoutY="341.0" lineSpacing="5.0" prefHeight="78.0" prefWidth="299.0" text="WELCOME TO THE REGISTER INTERFACE" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+   <AnchorPane layoutX="291.0" layoutY="-1.0" prefHeight="419.0" prefWidth="309.0" style="-fx-background-color: #ffffff;">
+      <Label layoutX="76.0" layoutY="11.0" prefHeight="32.0" prefWidth="187.0" text="REGISTRATION" textFill="#ffe259" underline="true">
+         <font>
+            <Font name="Segoe UI Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameRegisterUsers" alignment="CENTER" layoutX="40.0" layoutY="71.0" prefHeight="53.0" prefWidth="230.0" promptText="Username" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-border-color: #FFE259;">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailRegisterUsers" alignment="CENTER" layoutX="40.0" layoutY="157.0" prefHeight="53.0" prefWidth="230.0" promptText="E-maïl" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-border-color: #FFE259;">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordRegisterUsers" alignment="CENTER" layoutX="40.0" layoutY="244.0" prefHeight="53.0" prefWidth="230.0" promptText="Password" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-border-color: #FFE259;">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="register" layoutX="93.0" layoutY="325.0" mnemonicParsing="false" onAction="#registerUsers" prefHeight="41.0" prefWidth="124.0" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-background-color: #FFE259;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeWindowRegister" layoutX="277.0" layoutY="3.0" mnemonicParsing="false" onAction="#closeWindowRegister" prefHeight="17.0" prefWidth="22.0" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@img/close.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="loginUsersButton" layoutX="76.0" layoutY="380.0" mnemonicParsing="false" onAction="#loginUsers" prefHeight="32.0" prefWidth="159.0" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-background-color: #ffffff;" text="To login in." textFill="LIME">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Button>
+   </AnchorPane>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="380.0" prefWidth="601.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaveContact">
+   <TextField fx:id="userContact" alignment="CENTER" layoutX="99.0" layoutY="100.0" prefHeight="53.0" prefWidth="181.0" promptText="Phone" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-border-color: #FFE259;">
+      <font>
+         <Font name="Segoe UI Bold" size="14.0" />
+      </font>
+   </TextField>
+   <Label layoutX="183.0" prefHeight="32.0" prefWidth="249.0" text="SAVING A CONTACT" textFill="#ffe259" underline="true">
+      <font>
+         <Font name="Segoe UI Bold" size="25.0" />
+      </font>
+   </Label>
+   <Label layoutX="14.0" layoutY="115.0" prefHeight="23.0" prefWidth="85.0" text="Phone   :" textFill="#ffe259">
+      <font>
+         <Font name="Segoe UI Bold" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="288.0" layoutY="115.0" prefHeight="23.0" prefWidth="106.0" text="Last name :" textFill="#ffe259">
+      <font>
+         <Font name="Segoe UI Bold" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="14.0" layoutY="231.0" prefHeight="23.0" prefWidth="91.0" text="E-mail   :" textFill="#ffe259">
+      <font>
+         <Font name="Segoe UI Bold" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="312.0" layoutY="231.0" prefHeight="23.0" prefWidth="85.0" text="Sex       :" textFill="#ffe259">
+      <font>
+         <Font name="Segoe UI Bold" size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="userName" alignment="CENTER" layoutX="399.0" layoutY="100.0" prefHeight="53.0" prefWidth="188.0" promptText="Last name" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-border-color: #FFE259;">
+      <font>
+         <Font name="Segoe UI Bold" size="14.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="userEmail" alignment="CENTER" layoutX="105.0" layoutY="216.0" prefHeight="53.0" prefWidth="188.0" promptText="E-mail" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-border-color: #FFE259;">
+      <font>
+         <Font name="Segoe UI Bold" size="14.0" />
+      </font>
+   </TextField>
+   <Button fx:id="enregistrerContact" layoutX="261.0" layoutY="319.0" mnemonicParsing="false" onAction="#enregistrerNewContact" prefHeight="46.0" prefWidth="121.0" style="-fx-border-radius: 30 0 30 30; -fx-background-radius: 30 0 30 30; -fx-background-color: #FFE259;" text="Save" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Bold" size="16.0" />
+      </font>
+   </Button>
+   <Button fx:id="previousButtonWindowSaveContact" layoutX="-6.0" mnemonicParsing="false" onAction="#previousWindowSaveContact" prefHeight="22.0" prefWidth="41.0" style="-fx-background-color: #ffffff;">
+      <graphic>
+         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@img/left-arrow.png" />
+         </ImageView>
+      </graphic>
+   </Button>
+   <CheckBox fx:id="chexBoxHomme" layoutX="417.0" layoutY="231.0" mnemonicParsing="false" onAction="#chexBoxHommeMethod" prefHeight="23.0" prefWidth="70.0" text="Man">
+      <font>
+         <Font name="Segoe UI Bold" size="14.0" />
+      </font></CheckBox>
+   <CheckBox fx:id="chexBoxFemme" layoutX="502.0" layoutY="231.0" mnemonicParsing="false" onAction="#chexBoxFemmeMethod" prefHeight="23.0" prefWidth="85.0" text="Women">
+      <font>
+         <Font name="Segoe UI Bold" size="14.0" />
+      </font></CheckBox>
+</AnchorPane>
